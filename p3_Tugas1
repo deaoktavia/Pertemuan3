@@ -1,0 +1,38 @@
+#include <iostream> // Define iostream
+using namespace std; // menggunakan std
+int main()
+{
+    float NA;
+    float NT;
+    float UTS;
+    float UAS;
+    float Tugas;
+
+    cout << "Nilai Tes : ";
+    cin >> NT ;//membaca inputan dari keyboar
+    cout << "Nilai Tugas: ";
+    cin >> NT ;//membaca inputan dari keyboard
+    cout << "Nilai UTS : ";
+    cin >> UTS ;//membaca inputan dari keyboard
+    cout << "Nilai UAS : ";
+    cin >> UAS ;//membaca inputan dari keyboard
+    cout << "Nilai Tugas: ";
+    cin >> Tugas ;//membaca inputan dari keyboard
+
+    NA = 0.20*NT+0.30*UTS+0.40*UAS+0.20*Tugas;
+
+     if (NA <= 50){
+      cout<< "Indeks = D";
+    }
+    else if (NA <= 70 && NA >= 50){
+        cout<< "Indeks = C";
+    }
+    else if (NA <= 80 && NA >= 70){
+        cout<< "Indeks = B";
+    }
+    else {cout<< "Indeks = A";}
+
+
+         return 0;
+}
+
